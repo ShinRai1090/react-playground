@@ -1,14 +1,17 @@
-import './Expenses.css';
+import "./Expenses.css";
 
-import ExpenseItem from './ExpenseItem';
+import Card from "./Card";
+import ExpenseItem from "./ExpenseItem";
 
 function Expenses(expenseProps) {
-    return (<div className='expenses'>
-        <ExpenseItem expenseData={expenseProps.expenses[0]} />
-        <ExpenseItem expenseData={expenseProps.expenses[1]} />
-        <ExpenseItem expenseData={expenseProps.expenses[2]} />
-        <ExpenseItem expenseData={expenseProps.expenses[3]} />
-    </div>);
+  return (
+    <Card className="expenses">
+      <ExpenseItem expenseData={expenseProps.expenses[0]} />
+      <ExpenseItem expenseData={expenseProps.expenses[1]} />
+      <ExpenseItem expenseData={expenseProps.expenses[2]} />
+      <ExpenseItem expenseData={expenseProps.expenses[3]} />
+    </Card>
+  );
 }
 
 export default Expenses;
