@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -45,10 +45,7 @@ function App() {
       <div>
         <h2>Let's get started!</h2>
         <p>This is also visible!</p>
-        <ExpenseItem expenseData={expenses[0]} />
-        <ExpenseItem expenseData={expenses[1]} />
-        <ExpenseItem expenseData={expenses[2]} />
-        <ExpenseItem expenseData={expenses[3]} />
+        <Expenses expenses={expenses} />
       </div>
     </div>
   );
